@@ -5,7 +5,7 @@
 {
   width:200px;
   border: 2px solid #00FFFF;
-  padding:20px;
+  padding:40px;
   border-radius:10px;
   cursor:pointer;
 }
@@ -21,6 +21,23 @@ p
 .cb-row {margin: 10px;clear:both;overflow:hidden;}
 .cb-row label {float:left;}
 .cb-row input {float:right;}
+
+.grupa-playerow {
+position: relative;
+list-style-type: none;
+padding: 7px 0 7px 0;
+cursor: pointer;
+}
+
+
+.player-li {
+text-align: left;
+}
+
+.player-godziny {
+padding-left:20%;
+text-align: right !important;
+}
 </style>
 <script>
 function selectedAgree()
@@ -29,6 +46,10 @@ function selectedAgree()
      document.getElementById("strongly-agree").style.backgroundColor = "white";
       document.getElementById("disagree").style.backgroundColor = "white";
        document.getElementById("strongly-disagree").style.backgroundColor = "white";
+	   document.getElementById("input-agree").checked=true;
+	   document.getElementById("input-sagree").checked=false;
+	   document.getElementById("input-dagree").checked=false;
+	   document.getElementById("input-sdagree").checked=false;
 }
 
 function selectedSAgree()
@@ -37,6 +58,10 @@ function selectedSAgree()
      document.getElementById("strongly-agree").style.backgroundColor = "#ff9999";
       document.getElementById("disagree").style.backgroundColor = "white";
        document.getElementById("strongly-disagree").style.backgroundColor = "white";
+	   document.getElementById("input-agree").checked=false;
+	   document.getElementById("input-sagree").checked=true;
+	   document.getElementById("input-dagree").checked=false;
+	   document.getElementById("input-sdagree").checked=false;
 }
 function selectedDisAgree()
 {
@@ -44,6 +69,10 @@ function selectedDisAgree()
      document.getElementById("strongly-agree").style.backgroundColor = "white";
       document.getElementById("disagree").style.backgroundColor = "#ff9999";
        document.getElementById("strongly-disagree").style.backgroundColor = "white";
+	   document.getElementById("input-agree").checked=false;
+	   document.getElementById("input-sagree").checked=false;
+	   document.getElementById("input-dagree").checked=true;
+	   document.getElementById("input-sdagree").checked=false;
 }
 function selectedSDisAgree()
 {
@@ -51,6 +80,10 @@ function selectedSDisAgree()
      document.getElementById("strongly-agree").style.backgroundColor = "white";
       document.getElementById("disagree").style.backgroundColor = "white";
        document.getElementById("strongly-disagree").style.backgroundColor = "#ff9999";
+	   document.getElementById("input-agree").checked=false;
+	   document.getElementById("input-sagree").checked=false;
+	   document.getElementById("input-dagree").checked=false;
+	   document.getElementById("input-sdagree").checked=true;
 }
 </script>
 </head>
@@ -59,21 +92,23 @@ function selectedSDisAgree()
 
 <p><b>Sky is blue</b>
 </p>
+<ul type="square" class="grupa-playerow">
 <div class="options-container">
 <div class="options .cb-row " id="agree" onclick="return selectedAgree();">
-	<label for="nome">Agree</label>
+	<li class="player-li"><input id="input-agree" type="checkbox" name="agreement"><span class="player-godziny">Agree</span></li>
 </div>
   <br />
 <div class="options .cb-row " id="strongly-agree" onclick="return selectedSAgree();"> 
-	<label for="nome">Strongly-Agree</label>
+	<li class="player-li"><input id="input-sagree" type="checkbox" name="agreement"><span class="player-godziny">Strongly-Agree</span></li>
 </div>
   <br />
 <div class="options .cb-row " id="disagree" onclick="return selectedDisAgree();"> 
-	<label for="nome">Disagree</label>
+	<li class="player-li"><input id="input-dagree" type="checkbox" name="agreement"><span class="player-godziny">Disagree</span></li>
 </div>
   <br />
 <div class="options .cb-row " onclick="return selectedSDisAgree();" id="strongly-disagree">
-	<label for="nome">Strongly-Disagree</label>
+	<li class="player-li"><input  id="input-sdagree" type="checkbox" name="agreement"><span class="player-godziny">Strongly-Disagree</span></li>
 </div>
 </div>
+</ul>
 </html>
