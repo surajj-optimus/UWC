@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConsoleApp1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="COutput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C# is good</Value>
+    </Setting>
+    <Setting Name="SampleString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Suraj is Humble and Great</Value>
+    </Setting>
+    <Setting Name="SpecialCharacters" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^[a-zA-Z0-9 ]*$</Value>
+    </Setting>
+    <Setting Name="ExceptionMessage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Invalid Input: {0}</Value>
+    </Setting>
+    <Setting Name="Vehicle1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Zinco</Value>
+    </Setting>
+    <Setting Name="Vehicle2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">VW</Value>
+    </Setting>
+    <Setting Name="Vehicle3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BMW</Value>
+    </Setting>
+    <Setting Name="UpdatedVehicle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ferrari</Value>
+    </Setting>
+    <Setting Name="VehicleAfterUpdateSignature" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Vehicle 1 after update:</Value>
+    </Setting>
+    <Setting Name="Truck1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Garbage</Value>
+    </Setting>
+    <Setting Name="Truck2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dump</Value>
+    </Setting>
+    <Setting Name="Truck3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Carrier</Value>
+    </Setting>
+    <Setting Name="DisplayTrucksSignature" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Display Sorted Trucks:</Value>
+    </Setting>
+    <Setting Name="DisplayCarsSignature" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Display Sorted Cars:</Value>
+    </Setting>
+    <Setting Name="DisplayVehiclesSignature" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Display Sorted Vehicles:</Value>
+    </Setting>
+    <Setting Name="VehicleSignature" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Vehicle:</Value>
+    </Setting>
+    <Setting Name="MaxRandom" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="MinRandom" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="DefaultMessage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Wrong Choice!</Value>
+    </Setting>
+    <Setting Name="StudentNameSignature" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Enter your name:</Value>
+    </Setting>
+    <Setting Name="StudentAgeSignature" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Enter your age:</Value>
+    </Setting>
+    <Setting Name="StudentDetailsSignature" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Enter your choice 0:ENumber, 1:Name, 2:Age :</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
